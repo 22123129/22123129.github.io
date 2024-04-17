@@ -1,0 +1,524 @@
+body {
+	font-family: "Oswald", sans-serif;
+	font-style: normal;
+	background-color: #ffffff;
+	width: 1900px;
+	height: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
+
+
+.logo {
+	width: 225px;
+	height: 225px;
+	z-index: 3000;
+	position: relative;
+}
+
+#navigation {
+	width: 100%;
+	margin-top: -46.5px;
+	padding: 0px;
+	background-color: #d9ead3;
+	position: sticky;
+	top: 0px;
+	z-index: 2000;
+}
+
+ul.nav {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin: 0;
+	padding: 0;
+	z-index: 1000;
+}
+
+ul.nav li {
+	font-size: 17px;
+	font-weight: 400;
+	color: #b45f06;
+	padding: 11px;
+	margin: 0;
+	list-style-type: none;
+	z-index: 1;
+}
+
+ul.nav li a {
+	color: #b45f06;
+	text-decoration: none;
+}
+
+ul.nav li:hover {
+	background-color: #93c47d;
+	color: #b45f06;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + #page {
+	padding-top: 60px;
+}
+
+.orangebox {
+	background: linear-gradient(180deg, rgba(230,145,40,1) 33%, rgba(255,255,255,1) 100%);
+	width: 1900px;
+	height: 500px;
+	position: relative;
+}
+
+.slideshow-container {
+	width: 1000px;
+	height: 450px;
+	position: relative;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.slideshow-container img {
+	border-radius: 25px;
+	width: 1000px;
+	height: 450px;
+	object-fit: cover;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+	color: #000000;
+	font-size: 15px;
+	padding: 8px 12px;
+	bottom: -90px; /*This controls the height of the text under slideshow*/
+	width: 100%;
+	position: absolute;
+	text-align: center;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 4px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+#Whitebox {
+	display: flex;
+	position: relative;
+}
+
+
+.Teamimage {
+	width: 800px;
+	height: 600px;
+	object-fit: cover;
+	margin-top: 90px;
+	margin-left: 325px;
+	margin-bottom: 50px;
+}
+
+.Teamimage img {
+	border-radius: 25px;
+}
+
+.TeamText {
+	width: 600px;
+	height: 400px;
+	padding: 55px 0 0 35px;
+}
+
+.TeamText h1 {
+	font-weight: 500;
+	font-size: 35px;
+}
+
+.TeamText h3 {
+	font-weight: 400;
+	Font-size: 25px;
+}
+
+.TeamText p {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.TeamText ul {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.footer {
+	text-align: center;
+	height:90px;
+	padding-top:10px;
+	background-color: #e69128;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.lfooter{
+	width:250px;
+}
+
+.mfooter {
+	width: 300px;
+}
+
+.rfooter {
+	width: 250px;
+}
+
+.rfooter img {
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+}
+
+
+/*End of index*/
+/*Start of trainee*/
+
+.Trainee_Heading h1 {
+	font-weight: 500;
+	font-size: 50px;
+	text-align: center;
+	margin: auto;
+	padding-top: 30px;
+	text-decoration: underline;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.container > div {
+	background-color: #f1f1f1;
+	width: 450px;
+	height: 360px;
+	margin: 50px 25px 0 25px;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 25px;
+	object-fit: cover;
+}
+
+.container img {
+	border-radius: 25px;
+	width: 100%;
+	height: auto;
+	width: 450px;
+	height: 300px;
+}
+
+.Trainee_1, .Trainee_2, .Trainee_3 {
+	position: relative;
+	cursor: pointer;
+}
+
+#TraineeTestBlock1, #TraineeTestBlock2, #TraineeTestBlock3 {
+	position: absolute;
+	font-size: 18px;
+	word-wrap: break-word;
+	padding: 25px;
+	width: calc(100% - 50px);
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	opacity: 0;
+	z-index: 1000;
+}
+
+#TraineeTestBlockTint1, #TraineeTestBlockTint2, #TraineeTestBlockTint3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	opacity: 0;
+	z-index: 500;
+	border-radius: 25px;
+}
+
+
+.Trainee_1:hover #TraineeTestBlock1 {
+	transition: .5s ease;
+	opacity: 1;
+}
+
+.Trainee_2:hover #TraineeTestBlock2 {
+	transition: .5s ease;
+	opacity: 1;
+}
+
+.Trainee_3:hover #TraineeTestBlock3 {
+	transition: .5s ease;
+	opacity: 1;
+}
+
+.Trainee_1:hover #TraineeTestBlockTint1 {
+	transition: .5s ease;
+	opacity: 0.85;
+}
+
+.Trainee_2:hover #TraineeTestBlockTint2 {
+	transition: .5s ease;
+	opacity: 0.85;
+}
+
+.Trainee_3:hover #TraineeTestBlockTint3 {
+	transition: .5s ease;
+	opacity: 0.85;
+}
+
+.TraineeH1 {
+	font-weight: 500;
+	Font-size: 25px;
+}
+
+.container h1 {
+	font-weight: 500;
+	Font-size: 30px;
+}
+
+.TeamWork img {
+	border-radius: 25px;
+	width: 800px;
+	height: 600px;
+	max-width: 800px;
+	min-height: 500px;
+	object-fit: cover;
+	margin-top: 100px;
+	margin-left: 250px;
+	margin-bottom: 100px;
+	padding-top: 0px;
+}
+
+.TraineeText {
+	width: 600px;
+	height: 400px;
+	padding: 0 0 0 35px;
+}
+
+.TraineeText h1 {
+	font-weight: 300;
+	Font-size: 35px;
+	margin-top: 90px;
+}
+
+.TraineeText h2 {
+	font-weight: 300;
+	Font-size: 20px;
+}
+
+.TraineeText h3 {
+	font-weight: 300;
+	Font-size: 15px;
+	padding-left: 20px;
+}
+
+.TraineeText p {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.flex-container_one {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-container_one > div {
+	background-color: #f1f1f1;
+	width: 275px;
+	margin: 5px;
+	border-radius: 25px;
+}
+
+.flex-container_one li {
+	font-weight: 300;
+	font-size: 15px;
+}
+
+/*End of Trainee Web Devs*/
+/*Start of Specs and Quals*/
+
+/*Start Job Specifications*/
+.JobSpecBox {
+	width: 1900px;
+	height: 600px;
+}
+
+.JobSpecHeading {
+	font-weight: 300;
+	font-size: 35px;
+	padding-top: 75px;
+	padding-left: 925px;
+	position:absolute;
+}
+
+.JobInfo {
+	width: 750px;
+	height: 350px;
+	background-color: #f1f1f1;
+	position: absolute;
+	margin-top: 125px;
+	margin-left: 925px;
+	border-radius: 25px;
+}
+
+.JobInfo p{
+	font-weight: 300;
+	font-size: 20px;
+	padding: 0 35px 35px 35px;
+	word-wrap: break-word;
+}
+
+.JobImage img {
+	width: 600px;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 25px;
+	margin-top: 75px;
+	margin-left: 300px;
+}
+
+.joblist {
+	display: flex;
+	width: 750px;
+	height: 145px;
+	position: absolute;
+	margin-top: -50px;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 0 0 0 25px;
+}
+
+.neededlist{
+	margin-top: -15px;
+	margin-bottom: -40px;
+}
+
+.joblistone{
+	width: 375px;
+	height: 145px;
+}
+
+.joblisttwo{
+	width: 375px;
+	height: 145px;
+}
+/*End of Job Specifications*/
+
+/*Start of Job Requirements*/
+.JobReqBox {
+	width: 1900px;
+	height: 600px;
+}
+
+.reqinfo {
+	width: 750px;
+	height: 350px;
+	background-color: #f1f1f1;
+	position: absolute;
+	margin-top: 125px;
+	margin-left: 925px;
+	border-radius: 25px;
+}
+.reqinfo p{
+	font-weight: 300;
+	font-size: 20px;
+	padding: 0 35px 35px 35px;
+	word-wrap: break-word;
+}
+
+.JobReqHeading{
+	font-weight: 300;
+	font-size: 35px;
+	padding-top: 75px;
+	padding-left: 925px;
+	position:absolute;
+}
+
+.SpecImage img{
+	width: 600px;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 25px;
+	margin-top: 75px;
+	margin-left: 300px;
+}
+
+.reqlist {
+	display: flex;
+	width: 750px;
+	height: 145px;
+	position: absolute;
+	margin-top: -50px;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 0 0 0 25px;
+}
+
+.desirablelist{
+	margin-top: -15px;
+	margin-bottom: -40px;
+}
+
+.reqlistone{
+	width: 375px;
+	height: 145px;
+}
+
+.reqlisttwo{
+	width: 375px;
+	height: 145px;
+}
+/*End of Job Requirements*/
+
+/*End of Specs and Quals*/
+/*Start of Application Form*/
+
